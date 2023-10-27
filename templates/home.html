@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Disney Favorites</title>  
+    <title>Disney Favorites</title>
+    <style>
+      h1{
+        font-size:37px;
+        font-family: Comic Sans MS;
+        font-weight: normal;
+        color: rgb(0, 0, 150);
+        text-align: center;
+      }
+
+      #banner {
+        width: 100%;
+        height: ; 360px;
+      }
+      h2{
+        font-size: 15px;
+        font-family: Comic Sans MS;
+        color: rgb(0, 0, 180);
+        text-align: center;
+      }
+      #container {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .bodytext{
+        font-family: Comic Sans MS;
+        color: rgb(0, 0, 150);
+        text-align: center;
+      }
+      .disclaimer{
+        font-size: 10px;
+        font-family: Comic Sans MS;
+        color: rgb(0, 0, 150);
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>Your Favorite Disney Canon Movie</h1>
-    Here you can choose your favorite Disney movie
-    <p></p>
-    
-    <img src="https://testrepository.joaugoca.repl.co/static/banner.jpg"height="320">
-    <p>
-      If you already know your preferred Disney movie, just click on the button below to select it.<p>
-    <button>I know my preferred Disney movie</button>
-        
-    <p>
-      If you need help selecting your preferred Disney movie, click on the button bellow
-    </p>
-    <button>I want to see my options</button>
+    <div id="container">
+      <h1>Your Favorite Disney Canon Movie</h1>
+      <h2>Here you can choose your favorite Disney movie</h2>
+      <p></p>
+      
+      <img id = "banner"src="https://testrepository.joaugoca.repl.co/static/banner.jpg">
+      <p class="bodytext">
+        If you already know your preferred Disney movie, just click on the button below to select it.
+      <p>
+      <div style= "text-align: center;">    
+        <button>I know my preferred Disney movie</button>
+      <div>
+      <p class="bodytext">
+        If you need help selecting your preferred Disney movie, click on the button below
+      </p>
+      <div style = "text-align: center;">
+        <button>I want to see my options</button>
+      <div>
+      <p class="disclaimer"> After selecting your preferred movie you can share your preferrence with the world!</p>
+    </div>
   </body>
 </html>
