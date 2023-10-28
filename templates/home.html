@@ -2,62 +2,35 @@
 <html>
   <head>
     <title>Disney Favorites</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
-      h1{
-        font-size:37px;
-        font-family: Comic Sans MS;
-        font-weight: normal;
-        color: rgb(0, 0, 150);
-        text-align: center;
-      }
-
       #banner {
+        height: 360px;
         width: 100%;
-        height: ; 360px;
-      }
-      h2{
-        font-size: 15px;
-        font-family: Comic Sans MS;
-        color: rgb(0, 0, 180);
-        text-align: center;
-      }
-      #container {
-        max-width: 720px;
-        margin: 0 auto;
-      }
-      .bodytext{
-        font-family: Comic Sans MS;
-        color: rgb(0, 0, 150);
-        text-align: center;
-      }
-      .disclaimer{
-        font-size: 10px;
-        font-family: Comic Sans MS;
-        color: rgb(0, 0, 150);
-        text-align: center;
-      }
+        }
     </style>
   </head>
   <body>
-    <div id="container">
-      <h1>Your Favorite Disney Canon Movie</h1>
-      <h2>Here you can choose your favorite Disney movie</h2>
+    <div class= "container">
+      <h1 class="text-center">Your Favorite Disney Canon Movie</h1>
+      <h2 class="text-center">Here you can choose your favorite Disney movie</h2>
       <p></p>
-      
-      <img id = "banner"src="https://testrepository.joaugoca.repl.co/static/banner.jpg">
-      <p class="bodytext">
+      <img class= "img-fluid" id = "banner"src="https://testrepository.joaugoca.repl.co/static/banner.jpg">
+      <p class="text-center">
         If you already know your preferred Disney movie, just click on the button below to select it.
       <p>
-      <div style= "text-align: center;">    
-        <button>I know my preferred Disney movie</button>
+      <div class="text-center">
+        <button type="button" class="btn btn-primary">I know my preferred Disney movie</button>
       <div>
-      <p class="bodytext">
+      <p class="text-center mt-4">
         If you need help selecting your preferred Disney movie, click on the button below
       </p>
-      <div style = "text-align: center;">
-        <button>I want to see my options</button>
+      <div class="text-center">
+          <button type="button" class="btn btn-primary">I want to see my options</button>
       <div>
-      <p class="disclaimer"> After selecting your preferred movie you can share your preference with the world!</p>
+      <p class="text-center mt-4"> After selecting your preferred movie you can share your preference with the world!</p>
     </div>
   </body>
 </html>
