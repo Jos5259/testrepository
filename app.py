@@ -6,11 +6,11 @@ app = Flask(__name__)
 def hello_world():
     return render_template("home.html")
 
-@app.route('/select')
+@app.route('/select.html')
 def select():
   return render_template("select.html")
 
-@app.route('/versus')
+@app.route('/versus.html')
 def versus():
   return render_template("versus.html")
   
