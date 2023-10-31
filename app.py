@@ -1,6 +1,8 @@
-from flask import Flask, render_template, flash
+from flask import Flask, render_template, flash, url_for
+import os
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def hello_world():
@@ -8,9 +10,9 @@ def hello_world():
 
 @app.route('/select.html')
 def select():
-  return render_template("select.html")
+  imagelist = os.listdir(os.path.join(app.static_folder,"images"))
+  return render_template("select.html", imagelist=imagelist)
   
-
 @app.route('/versus.html')
 def versus():
   return render_template("versus.html")
