@@ -13,6 +13,10 @@ def select():
   imagelist = os.listdir(os.path.join(app.static_folder,"images"))
   return render_template("select.html", imagelist=imagelist)
   
+@app.route('/share.html')  
+def share():  
+    return render_template('share.html')
+  
 @app.route('/versus.html')
 def versus():
   return render_template("versus.html")

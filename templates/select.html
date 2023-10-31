@@ -22,11 +22,13 @@
       <section>
         {% for image in imagelist %}
         <div class="centre">
-          <button type="submit">
-          <img class="center" src="{{ url_for('static', filename='images/' + image) }}">
-          </img>
-            <p>{{image|replace(".jpg", "")}}</p>
-          </button>
+          <a href="share.html">
+            <button type="submit">
+              <img class="center" src="{{ url_for('static', filename='images/' + image) }}">
+              </img>
+              <p>{{image|replace(".jpg", "")}}</p>
+            </button>
+          </a>
         </div>
         {% endfor %}
       </section>
